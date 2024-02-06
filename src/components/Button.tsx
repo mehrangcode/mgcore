@@ -1,4 +1,5 @@
-import useMainStore, { MainStateType } from "../context/store"
+import { MainStateType } from "../../mgtypes/mainstore"
+import useMainStore from "../context/store"
 
 function Button() {
     const mainStore: MainStateType = useMainStore()
