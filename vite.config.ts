@@ -14,9 +14,10 @@ export default defineConfig({
       exposes: {
         './Button': './src/components/Button',
       },
-      shared: ['react', 'react-dom']
+      shared: ['react', 'react-dom', 'zustand']
     })
-  ], optimizeDeps: {
+  ], 
+  optimizeDeps: {
     esbuildOptions: {
       target: 'esnext'
     }
@@ -26,6 +27,5 @@ export default defineConfig({
   },
   server: {
     port: 4002,
-    open: "http://localhost:4002"
   }
 })

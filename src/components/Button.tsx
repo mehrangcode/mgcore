@@ -1,9 +1,9 @@
-import { useState } from "react"
+import useMainStore, { MainStateType } from "../context/store"
 
 function Button() {
-    const [counter, setCounter] = useState(0)
+    const mainStore: MainStateType = useMainStore()
     return (
-        <button onClick={() => setCounter(current => current + 1)}>Click {counter ? counter + " Times" : "ME"}</button>
+        <button onClick={() => mainStore?.increase(1)}>Click {mainStore.counter ? mainStore.counter + " Times" : "ME"}</button>
     )
 }
 
