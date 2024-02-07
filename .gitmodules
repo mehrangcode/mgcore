@@ -1,3 +1,3 @@
 [submodule "mgtypes"]
-	path = mgtypes
+	path = src/mgtypes
 	url = https://github.com/mehrangcode/mgtypes

@@ -1,5 +1,5 @@
-import create from 'zustand'
-import { MainStateType } from '../../mgtypes/mainstore'
+import {create} from 'zustand'
+import { MainStateType } from '../mgtypes/mainstore'
 const useMainStore = create<MainStateType>()(
   //   devtools(
   //     persist(
